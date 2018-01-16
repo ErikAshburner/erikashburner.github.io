@@ -5,7 +5,7 @@ var wordCount=data.words.length;
 
 function showOtherWord() {
   
-  const div = document.getElementById('words');
+  const div = document.getElementById('word');
   var random = getRandomInt(0, wordCount);
   while (random == lastIndex) {
     random = getRandomInt(0, wordCount);
