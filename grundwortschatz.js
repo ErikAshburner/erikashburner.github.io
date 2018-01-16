@@ -1,6 +1,5 @@
 function init() {
-  var words = JSON.parse(data);
-alert(words.words.length);
+alert(data.words.length);
   showOtherWord();
 }
 
