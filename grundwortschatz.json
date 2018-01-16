@@ -1,4 +1,4 @@
-data = '{  
+data = {  
    "words":[  
       "die",
       "der",
@@ -101,4 +101,4 @@ data = '{
       "können",
       "sein"
    ]
-}'
+};
