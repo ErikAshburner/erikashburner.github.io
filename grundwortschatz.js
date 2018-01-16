@@ -1,5 +1,5 @@
 function init() {
-  var words = JSON.parse(grundwortschatz);
+  var words = JSON.parse(data);
 alert(words.words.length);
   showOtherWord();
 }
