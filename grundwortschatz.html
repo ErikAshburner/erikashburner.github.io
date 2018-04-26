@@ -17,7 +17,20 @@
 <br>
 <br>
 <h1><div id="word"></div></h1>
-<input onclick='responsiveVoice.speak(document.getElementById("word").innerHTML);' type='button' value='🔊 Play' />
+  <!-- see available languages https://responsivevoice.org/text-to-speech-languages/ --> 
+<input onclick='responsiveVoice.speak(document.getElementById("word").innerHTML, "Deutsch Female");' type='button' value='🔊 Play' />
+  <br>
+  <br>
+  <br>
+  <br>
+  <p>Andere Sprecher:</p>
+  <input onclick='responsiveVoice.speak(document.getElementById("word").innerHTML, "UK English Female");' type='button' value='🔊 Play (Englisch)' />
+  <br>
+  <br>
+  <input onclick='responsiveVoice.speak(document.getElementById("word").innerHTML, "UK English Male");' type='button' value='🔊 Play (Englisch)' />
+  <br>
+  <br>
+  <input onclick='responsiveVoice.speak(document.getElementById("word").innerHTML, "Chinese Female");' type='button' value='🔊 Play (Chinese)' />
 </body>
 
 </html>
