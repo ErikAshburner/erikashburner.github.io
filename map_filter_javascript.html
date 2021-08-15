@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>JS Map, Filter</title>
+<!-- CSS -->
+<link href="style.css" rel="stylesheet" type="text/css" />
+<!-- JS-->
+<script src="map_filter.js" type="text/javascript"></script>
+</head>
+
+<body onload="fetchAuthors()">
+Showing some fetched data... (<a href="https://scotch.io/tutorials/how-to-use-the-javascript-fetch-api-to-get-data" target="_blank">https://scotch.io/tutorials/how-to-use-the-javascript-fetch-api-to-get-data</a> )
+<button onclick="fetchAuthors()">Refresh</button>
+<h1>Authors</h1>
+<ul id="authors"></ul>
+
+<label for="personList">Persons:</label>
+
+<textarea id="personList" name="personList"
+          rows="20" cols="33" readonly>
+</textarea>
+</body>
+
+</html>
