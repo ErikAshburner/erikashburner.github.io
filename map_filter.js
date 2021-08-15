@@ -42,7 +42,7 @@ var personList = [];
         var name = person.name.first + " " + person.name.last;
         foundListTextArea.value +=  name + '\r\n';
 
-      };)
+      });
 
 
   }
