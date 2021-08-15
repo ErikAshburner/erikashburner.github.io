@@ -32,7 +32,7 @@ var personList = [];
       const searchListTextArea = document.getElementById('searchList');
       const foundListTextArea = document.getElementById('foundList');
 
-      var searchList = searchListTextArea.val.split('\n');
+      var searchList = searchListTextArea.value.split('\n');
       console.log(searchList);
       var foundList = personList.filter(function (person) {
         return searchList.some(name => name.toLowerCase() == person.toLowerCase());
