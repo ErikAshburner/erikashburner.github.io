@@ -38,7 +38,7 @@ var personList = [];
         return searchList.some(name => name.toLowerCase() == person.toLowerCase());
       });
 
-      foundList.forEach(person => {
+      foundList.forEach(function (person) {
         var name = person.name.first + " " + person.name.last;
         foundListTextArea.value +=  name + '\r\n';
 
