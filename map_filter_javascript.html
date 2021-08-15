@@ -11,23 +11,32 @@
 </head>
 
 <body onload="fetchPersons()">
-
+<p>    
 Enter some person names in the 'Search' text area to search for in the 'Person' text area. <br>
 Add a line break between each person to search for.
+</p>
 <button onclick="fetchPersons()">Refresh the persons list</button>
+
 
 <label for="personList">Persons:</label>
 <textarea id="personList" name="personList"
           rows="20" cols="33" readonly>
 </textarea>
 
-<label for="searchList">Search (add a line break between each person to search for):</label>
+<br>
+<br>
+<label for="searchList">Search:</label>
 <textarea id="searchList" name="personList"
           rows="10" cols="33">
 </textarea>
 
+<br>
+<br>
 <button onclick="searchPersons()">Search</button>
 
+
+<br>
+<br>
 <label for="foundList">Found:</label>
 <textarea id="foundList" name="foundList"
           rows="10" cols="33">
