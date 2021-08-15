@@ -1,4 +1,4 @@
-const url = 'https://randomuser.me/api/?results=1000';
+const url = 'https://randomuser.me/api/?results=100';
 var personList = [];
 
 // fetch the data and add a list entry for each
@@ -36,7 +36,7 @@ function searchPersons() {
   var searchList = searchListTextArea.value.split('\n');
   console.log(searchList);
 
-  
+
   var foundList = personList.filter(function (person) {
     return searchList.some(name => name.toLowerCase() == person.toLowerCase());
   });
