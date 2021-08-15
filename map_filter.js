@@ -15,7 +15,7 @@ var personList = [];
     .then((resp) => resp.json())
     .then(function(data) {
       let persons = data.results;
-      return persons.map(function(author) {
+      return persons.map(function(person) {
         var name = person.name.first + " " + person.name.last;
         personList.push(name);
         personListTextArea.value +=  name + '\r\n';
