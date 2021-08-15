@@ -10,17 +10,29 @@
 <script src="map_filter.js" type="text/javascript"></script>
 </head>
 
-<body onload="fetchAuthors()">
-Showing some fetched data... (<a href="https://scotch.io/tutorials/how-to-use-the-javascript-fetch-api-to-get-data" target="_blank">https://scotch.io/tutorials/how-to-use-the-javascript-fetch-api-to-get-data</a> )
-<button onclick="fetchAuthors()">Refresh</button>
-<h1>Authors</h1>
-<ul id="authors"></ul>
+<body onload="fetchPersons()">
+
+Enter some person names in the 'Search' text area to search for in the 'Person' text area. <br>
+Add a line break between each person to search for.
+<button onclick="fetchPersons()">Refresh the persons list</button>
 
 <label for="personList">Persons:</label>
-
 <textarea id="personList" name="personList"
           rows="20" cols="33" readonly>
 </textarea>
+
+<label for="searchList">Search (add a line break between each person to search for):</label>
+<textarea id="searchList" name="personList"
+          rows="10" cols="33">
+</textarea>
+
+<button onclick="searchPersons()">Search</button>
+
+<label for="foundList">Found:</label>
+<textarea id="foundList" name="foundList"
+          rows="10" cols="33">
+</textarea>
+
 </body>
 
 </html>
