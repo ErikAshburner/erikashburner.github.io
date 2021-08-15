@@ -31,7 +31,8 @@ var personList = [];
     function searchPersons() {
       const searchListTextArea = document.getElementById('searchList');
       const foundListTextArea = document.getElementById('foundList');
-
+      // clear found list
+      foundList.value ='';
       var searchList = searchListTextArea.value.split('\n');
       console.log(searchList);
       var foundList = personList.filter(function (person) {
