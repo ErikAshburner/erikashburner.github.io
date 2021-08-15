@@ -23,7 +23,9 @@ var personList = [];
     })
     .catch(function(error) {
       console.log(JSON.stringify(error));
-    });   
+    });  
+    
+  }
 
     // search persons in the person list and add them to the found list
     function searchPersons() {
