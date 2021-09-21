@@ -15,11 +15,20 @@ function showOtherWord() {
     
   div.innerHTML=data.words[lastIndex];
 }
+
 // gets a random int between min (inclusive) and max (exclusive)
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max); 
   return Math.floor(Math.random() * (max - min)) + min;
 }
+
+function speak() {
+  const toSay = document.getElementById('word').innerHTML;
+  const hallo = new SpeechSynthesisUtterance(toSay);
+  hallo.lang = "de-DE";
+  window.speechSynthesis.speak(hallo);
+}
+
 
 
