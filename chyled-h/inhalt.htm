@@ -1,0 +1,169 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>inhalt</title>
+<script language="JavaScript">
+  <!--
+  
+  Normal1 = new Image(); 
+  Normal1.src = "images/startseite1.gif"; 
+  Highlight1 = new Image(); 
+  Highlight1.src = "images/startseite22.gif"; 
+
+  Normal2 = new Image(); 
+  Normal2.src = "images/bandinfo1.gif"; 
+  Highlight2 = new Image(); 
+  Highlight2.src = "images/bandinfo22.gif"; 
+
+Normal3 = new Image(); 
+Normal3.src = "images/dieCD1.gif"; 
+Highlight3 = new Image(); 
+Highlight3.src = "images/dieCD22.gif"; 
+
+Normal4 = new Image(); 
+Normal4.src = "images/bilder1.gif"; 
+Highlight4 = new Image(); 
+Highlight4.src = "images/bilder22.gif"; 
+
+Normal5 = new Image(); 
+Normal5.src = "images/kontakt1.gif"; 
+Highlight5 = new Image(); 
+Highlight5.src = "images/kontakt22.gif";
+
+Normal6 = new Image(); 
+Normal6.src = "images/gaestebuch1.gif"; 
+Highlight6 = new Image(); 
+Highlight6.src = "images/gaestebuch22.gif";   
+
+Normal7 = new Image(); 
+Normal7.src = "images/forum1.gif"; 
+Highlight7 = new Image(); 
+Highlight7.src = "images/forum22.gif"; 
+
+Normal8 = new Image(); 
+Normal8.src = "images/gruesse1.gif"; 
+Highlight8 = new Image(); 
+Highlight8.src = "images/gruesse22.gif"; 
+  
+  function Bildwechsel(Bildnr,Bildobjekt)
+  {
+   window.document.images[Bildnr].src = Bildobjekt.src;
+  }
+ //-->;
+  //-->;
+ </script>
+
+<base target="Hauptframe">
+
+</head>
+<body background="images/Flipblau.jpg" link="#FFFFCC" vlink="#FF0000" alink="#FF0000">
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!--
+function preload_start() {}
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript1.2" TYPE="text/javascript">
+<!--
+var preload_images =
+[
+  "images/startseite1.gif","images/startseite22.gif",
+  "images/bandinfo1.gif","images/bandinfo22.gif",
+  "images/dieCD1.gif","images/dieCD22.gif",
+  "images/bilder1.gif","images/bilder22.gif",
+  "images/kontakt1.gif","images/kontakt22.gif",
+  "images/gaestebuch1.gif","images/gaestebuch22.gif",
+  "images/forum1.gif","images/forum22.gif",
+  "images/gruesse1.gif","images/gruesse22.gif",
+  ]
+var load_next = 500 // Zeit in ms zwischen zwei Ladevorgaengen
+var pos_array = 0
+// Ladefunktion
+function preload()
+{
+  var new_image = new Image()
+  new_image.src = preload_images[pos_array]
+  
+  pos_array++
+  if(pos_array < preload_images.length)
+    setTimeout('preload()', load_next)
+}
+function preload_start()
+{
+  if(preload_images.length == 0)
+    return
+  setTimeout('preload()', load_next)
+}
+// -->
+</SCRIPT>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div align="left">
+  <table border="0" cellspacing="0" height="45%" width="100%" cellpadding="0">
+    
+        
+      
+    
+    <tr>
+      <td align="center" height="5%" width="107"> 
+      <p align="center"> 
+      <a href="startseite.htm" onMouseOver="Bildwechsel(0,Highlight1)"
+ onMouseOut="Bildwechsel(0,Normal1)"><img alt="Startseite, Neuigkeiten" src="images/startseite1.gif" width="73" height="24" border="0" align="right"></a> 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      </p>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="107" height="5%">
+        <p align="center"><a href="bandinfo.htm" onMouseOver="Bildwechsel(1,Highlight2)"
+ onMouseOut="Bildwechsel(1,Normal2)"><img alt="Bandinfo" src="images/bandinfo1.gif" width="72" height="22" border="0" align="middle"></a></p>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="107" height="5%">
+        <p align="center"><a href="diecd.htm" onMouseOver="Bildwechsel(2,Highlight3)"
+ onMouseOut="Bildwechsel(2,Normal3)"><img alt="MP3´s und Texte zu DESTINATION UKNOWN" src="images/dieCD1.gif" width="61" height="20" border="0" align="left"></a></p>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="107" height="5%">
+        <p align="center"><a href="bilder.htm" onMouseOver="Bildwechsel(3,Highlight4)"
+ onMouseOut="Bildwechsel(3,Normal4)"><img alt="Fotos, Auftritte, etc." src="images/bilder1.gif" width="63" height="22" border="0" align="left"></a></p>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="107" height="6%">
+        <p align="center"><a href="kontakt.htm" onMouseOver="Bildwechsel(4,Highlight5)"
+ onMouseOut="Bildwechsel(4,Normal5)"><img <img alt="Kontakt zu uns" src="images/kontakt1.gif" width="67" height="21" border="0" align="left"></a></p>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="107" height="6%">
+        <p align="center"><a href="http://tools.freecity.de/guestbook/chyled-h" onMouseOver="Bildwechsel(5,Highlight6)"
+ onMouseOut="Bildwechsel(5,Normal6)"><img alt="Unser Gästebuch" src="images/gaestebuch1.gif" width="77" height="22" border="0" align="left"></a></p>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="107" height="6%">
+        <p align="center"><a href="http://www.forumromanum.de/member/forum/forum.cgi?USER=user_127908" onMouseOver="Bildwechsel(6,Highlight7)"
+ onMouseOut="Bildwechsel(6,Normal7)"><img alt="Forum" src="images/forum1.gif" width="60" height="20" border="0" align="middle"></a>    
+        </p>
+     </td>
+    </tr>
+    <tr>
+      <td align="center" width="107" height="6%">
+        <p align="center">
+        <a href="gruesse.htm" onMouseOver="Bildwechsel(7,Highlight8)"
+ onMouseOut="Bildwechsel(7,Normal8)"><img alt="Grüße & Dank" src="images/gruesse1.gif" width="60" height="20" border="0" align="right"></a>
+        </p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>&nbsp;</p>
+
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<html>
+<head>
+<title>inhalt</title>
+
+<script language="JavaScript">
+<!--
+
+Normal1 = new Image(); 
+Normal1.src = "stern.gif"; 
+Highlight1 = new Image(); 
+Highlight1.src = "stern.gif"; 
+
+Normal2 = new Image(); 
+Normal2.src = "startseite1.gif"; 
+Highlight2 = new Image(); 
+Highlight2.src = "startseite22.gif"; 
+
+Normal3 = new Image(); 
+Normal3.src = "bandinfo1.gif"; 
+Highlight3 = new Image(); 
+Highlight3.src = "bandinfo22.gif"; 
+
+Normal4 = new Image(); 
+Normal4.src = "dieCD1.gif"; 
+Highlight4 = new Image(); 
+Highlight4.src = "dieCD22.gif"; 
+
+Normal5 = new Image(); 
+Normal5.src = "bilder1.gif"; 
+Highlight5 = new Image(); 
+Highlight5.src = "bilder22.gif"; 
+
+Normal6 = new Image(); 
+Normal6.src = "kontakt1.gif"; 
+Highlight6 = new Image(); 
+Highlight6.src = "kontakt22.gif"; 
+
+Normal7 = new Image(); 
+Normal7.src = "gruesse1.gif"; 
+Highlight7 = new Image(); 
+Highlight7.src = "gruesse22.gif"; 
+
+
+Normal8 = new Image(); 
+Normal8.src = "stern.gif"; 
+Highlight8 = new Image(); 
+Highlight8.src = "stern.gif"; 
+
+
+function Bildwechsel(Bildnr,Bildobjekt)
+{
+ window.document.images[Bildnr].src = Bildobjekt.src;
+}
+//-->
+</script>
+<base target="Hauptframe">
+</head>
+
+
+
+<body background="images/Flipblau.jpg" link="#FFFFCC" vlink="#FF0000" alink="#FF0000">
+
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!--
+function preload_start() {}
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript1.2" TYPE="text/javascript">
+<!--
+// Liste der Bilder
+var preload_images =
+[
+  "startseite1.gif","startseite22.gif",
+  "bandinfo1.gif","bandinfo22.gif",
+  "dieCD1.gif","dieCD22.gif",
+  "bilder1.gif","bilder22.gif",
+  "kontakt1.gif","kontakt22.gif",
+  "gruesse1.gif","gruesse22.gif",
+  ]
+// intern benoetigte Parameter
+var load_next = 500 // Zeit in ms zwischen zwei Ladevorgaengen
+var pos_array = 0
+// Ladefunktion
+function preload()
+{
+  // Naechstes Bild laden
+  var new_image = new Image()
+  new_image.src = preload_images[pos_array]
+  // Noch Bilder zu laden?
+  pos_array++
+  if(pos_array < preload_images.length)
+    setTimeout('preload()', load_next)
+}
+// Start der Vorladefunktion
+function preload_start()
+{
+  // Bilder vorhanden?
+  if(preload_images.length == 0)
+    return
+  // Pruefroutine starten
+  setTimeout('preload()', load_next)
+}
+// -->
+</SCRIPT>
+
+<h2 class="Sh2" align="center"><a class="an" name="a1"><img src="punkt.gif" width="0" height="0" ><img src="punkt.gif" width="0" height="0"  > </a></h2>
+
+<p align="center"><img src="punkt.gif" width="0" height="0" ><br>
+
+
+
+
+<table border="0" width="100%" height="304" cellspacing="5">
+  <tr>
+    <td width="100%" height="47" align="center">
+      <p align="center"><img border="0" src="stern.gif" width="30" height="30">
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" height="24" align="center">
+      <p align="center"><a href="startseite.htm" onMouseOver="Bildwechsel(4,Highlight2)" onMouseOut="Bildwechsel(4,Normal2)"><img src="startseite1.gif" width=79 height=22 border=0 alt="Startseite, Neuigkeiten"></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" height="24" align="center"><a href="bandinfo.htm" onMouseOver="Bildwechsel(5,Highlight3)" onMouseOut="Bildwechsel(5,Normal3)"><img src="bandinfo1.gif" width=73 height=22 border=0 alt="Bandinfo"></a>
+
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" height="24" align="center"><a href="diecd.htm" onMouseOver="Bildwechsel(6,Highlight4)" onMouseOut="Bildwechsel(6,Normal4)"><img src="dieCD1.gif" width=62 height=21 border=0 alt="MP3´s und Texte zu DESTINATION UKNOWN"></a>
+
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" height="24" align="center"><a href="bilder.htm" onMouseOver="Bildwechsel(7,Highlight5)" onMouseOut="Bildwechsel(7,Normal5)"><img src="bilder1.gif" width=60 height=21 border=0 alt="Fotos einiger Auftritte"></a>
+
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" height="24" align="center"><a href="kontakt.htm" onMouseOver="Bildwechsel(8,Highlight6)" onMouseOut="Bildwechsel(8,Normal6)"><img src="kontakt1.gif" width=69 height=22 border=0 alt="Kontakt zu uns"></a>
+
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" height="31" align="center"><a href="gruesse.htm" onMouseOver="Bildwechsel(9,Highlight7)" onMouseOut="Bildwechsel(9,Normal7)"><img src="gruesse1.gif" width=60 height=19 border=0 alt="Grüße & Dank"></a>
+
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" height="42" align="center"><img border="0" src="stern.gif" width="30" height="30">
+
+    </td>
+  </tr>
+</table>
+&nbsp;
+<p>&nbsp;</p>
+
+&nbsp;
+
+<p></p>
+
+
+</html>
